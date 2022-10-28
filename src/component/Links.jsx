@@ -17,7 +17,7 @@ export const Links = [
   {
     id: 'book__python',
     title: 'Python Books',
-    url: 'https://books.zuri.team/python-for-beginners?ref_id=<yourslackname>',
+    url: 'https://books.zuri.team/python-for-beginners?ref_id=larjar',
   },
   {
     id: 'pitch',
