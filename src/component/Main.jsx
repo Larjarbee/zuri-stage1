@@ -2,7 +2,7 @@ import React from 'react';
 import { Links } from './Links';
 import MainList from './MainList';
 import image from '../assets/ca.jpg';
-import icon from '../assets/icon.png';
+import git from '../assets/git.png';
 import slack from '../assets/slack.png';
 import share from '../assets/share.png';
 import dot from '../assets/dot.png';
@@ -33,7 +33,7 @@ const Main = () => {
         </ul>
         <div className='icon'>
           <img src={slack} alt='icon' width={25} />
-          <img src={icon} alt='icon' />
+          <img src={git} alt='icon' />
         </div>
       </section>
       <footer className='footer'>
