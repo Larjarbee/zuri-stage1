@@ -16,6 +16,7 @@ main {
   width: 80%;
   margin: 0px auto;
   padding-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 #slack {
@@ -31,12 +32,6 @@ main {
   padding: 5px;
 }
 
-.icons img:hover {
-  background-color: #D0D5DD;
-  transition: 0.5s;
-  cursor: pointer;
-}
-
 .dot {
   display: none;
 }
@@ -48,7 +43,11 @@ section {
   border-radius: 1rem;
 }
 
-section img {
+.profile {
+  margin-top: 4rem;
+}
+
+.profile img {
   border-radius: 50%;
 }
 
@@ -91,17 +90,60 @@ ul li a:hover {
   cursor: pointer;
 }
 
+hr {
+  width: 80%;
+  margin: 0px auto;
+  opacity: 0.7;
+  margin-top: 4rem;
+}
+
 .footer {
   display: flex;
   width: 80%;
   margin: 0px auto;
-  margin-top: 4rem;
+  margin-top: 2rem;
   justify-content: space-between;
   align-items: center;
 }
 
 .footer h5 {
-  color: #1018286e;
+  color: #10182852;
+}
+
+.tooltip {
+  position: relative;
+  display: block;
+  float: right;
+  padding: 1rem;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 20px;
+  right: 110%;
+}
+
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent black;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
 
 @media only screen and (max-width: 600px) {
@@ -117,5 +159,10 @@ ul li a:hover {
     flex-direction: column;
     justify-content: left;
     align-items: flex-start;
+  }
+
+  main {
+    width: 95%;
+
   }
 }

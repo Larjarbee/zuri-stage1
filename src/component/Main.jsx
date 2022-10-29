@@ -12,14 +12,17 @@ import vec from '../assets/vec.png';
 const Main = () => {
   return (
     <main>
+      <div class='tooltip'>
+        <img className='share' src={share} alt='icon' />
+        <img className='dot' src={dot} alt='icon' />
+        <span class='tooltiptext'>Share Link</span>
+      </div>
       <section>
-        <div className='icons'>
-          <img className='share' src={share} alt='icon' />
-          <img className='dot' src={dot} alt='icon' />
+        <div className='profile'>
+          <img src={image} alt='img' width={100} id='profile__img' />
+          <h5 id='twitter'>@Larjar_bee</h5>
+          <h5 id='slack'>@Larjar</h5>
         </div>
-        <img src={image} alt='img' width={100} id='profile__img' />
-        <h5 id='twitter'>Larjar_bee</h5>
-        <h5 id='slack'>Larjar</h5>
 
         <ul>
           {Links.map((link) => (
@@ -36,6 +39,7 @@ const Main = () => {
           <img src={git} alt='icon' />
         </div>
       </section>
+      <hr />
       <footer className='footer'>
         <img src={Vector} alt='img' height={20} />
         <h5>HNG Internship 9 Frontend Task</h5>
