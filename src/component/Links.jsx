@@ -12,13 +12,11 @@ export const Links = [
   {
     id: 'books',
     title: 'Zuri Books',
-    //subTitle: 'Find books about design and coding',
     url: ' http://books.zuri.team',
   },
   {
     id: 'book__python',
     title: 'Python Books',
-    //subTitle: 'Buy Now',
     url: 'https://books.zuri.team/python-for-beginners?ref_id=larjar',
   },
   {
